@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="includes/css/styles.css" rel="stylesheet">
+
+    <!-- Include Modernizr in the head, before any other Javascript -->
+    <script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <!-- start from here-->
+        <div class="navbar navbar-fixed-top">
+            <div class="container">
+
+                <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+
+                <a href="/" class="navbar-brand"><img src="images/logo.png" alt="logo"></a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Web Design</a></li>
+                                <li><a href="#">Web Development</a></li>
+                                <li><a href="#">Seo</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">More Services</li>
+                                <li><a href="#">Content Creation</a></li>
+                                <li><a href="#">Social Media Marketing</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--- End navbar-nav --->
+                    <form class="navbar-form pull-left">
+                        <input type="text" class="form-control" placeholder="Search" id="searchInput" />
+                        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </form>
+                    <!--- End navbar-form--->
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account <strong class="caret"></strong>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-off"></span>Sign Out</a></li>
+                    </ul>
+                    </a>
+                    </li>
+                    </ul>
+                    <!--- End nav pull-right-->
+                </div>
+                <!-- End nav collapse -->
+            </div>
+
+        </div>
+        <!-- End Navbar -->
+
+        <!--its the end of navbar -->
+
+        <div class="carousel slide" id="myCarousel">
+            <!-- indicators -->
+            <ol class="carousel-indicators">
+                <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+                <li data-slide-to="1" data-target="#myCarousel"></li>
+                <li data-slide-to="2" data-target="#myCarousel"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active" id="slide1">
+                    <div class="carousel-caption">
+                        <h4>Bootstrap 3</h4>
+                        <p>Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
+                    </div>
+                    <!-- End carousel caption-->
+                </div>
+                <!-- End item -->
+
+                <div class="item" id="slide2">
+                    <div class="carousel-caption">
+                        <h4>Learn to code a website in 4-hours</h4>
+                        <p>PSD TO HTML5 &#33; CSS3 in a popular udemy course that has helped thousands of aspiring web designers launch their web design career</p>
+                    </div>
+                    <!-- End carousel caption-->
+                </div>
+                <!-- End item -->
+
+                <div class="item" id="slide3">
+                    <div class="carousel-caption">
+                        <h4>Web Hosting 101</h4>
+                        <p>Learn how to bay a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+                    </div>
+                    <!-- End carousel caption-->
+                </div>
+                <!-- End item -->
+
+            </div>
+            <!-- End carousel-inner -->
+
+            <!-- Controls -->
+            <a href="#myCarousel" class="left carousel-control" data-slide="prev"><span class="icon-prev"></span></a>
+            <a href="#myCarousel" class="right carousel-control" data-slide="next"><span class="icon-next"></span></a>
+
+        </div>
+        <!-- End myCarousel-->
+
+
+        <!-- Start from heare -->
+        <div class="row" id="bigCallout">
+            <div class="col-12">
+
+                <div class="alert alert-success alert-block fade in" id="successAlert">
+                    <button type="button" class="close" data-dismiss="alert">x</button>
+                    <h4>Success!</h4>
+                    <p>You just made this element display by using jquery. Click the "x" in the top right corner to closed the bad boy. </p>
+                </div>
+                <!-- visible only on small devices-->
+                <div class="well well-small visible-sm">
+                    <a href="#" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a Call</a>
+                </div>
+                <!-- End well-small-->
+                <div class="page-header">
+                    <h1>A Fancy Header <small>A subheader for extra awesome</small></h1>
+                </div>
+                <!-- End page_header -->
+                <p class="lead">Some solid leading copy will help get users engaged. use the area to come up with something real nice know what i am saying?</p>
+                <a href="#" class="btn btn-large btn-primary" id="alertMe">Click a nice big button</a>
+                <a href="#" class="btn btn-large btn-link">a secondary link</a>
+            </div>
+            <!-- End cal-12 -->
+        </div>
+        <!-- End bigCallout -->
+
+        <div class="row" id="featuresHeading">
+            <div class="col-12">
+                <h2>More Features</h2>
+                <p class="lead"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, accusantium dignissimos nulla ullam officia ratione, inventore ipsum vitae aliquam doloremque qui culpa fugit tempora est iste eveniet cupiditate minus blanditiis!</p>
+            </div>
+            <!-- End call-12-->
+        </div>
+        <!-- End featuresHeading -->
+
+        <div class="row" id="features">
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Markup With HTML5</h3>
+                    </div>
+                    <!-- End panel-heading-->
+                    <img src="images/badge_html5.jpg" alt="img" class="img-circle">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos inventore, voluptas quidem. Adipisci nemo commodi nobis, amet labore impedit illo iusto incidunt maxime officiis quibusdam deserunt reprehenderit saepe, laboriosam accusamus.</p>
+                    <a href="#" target="_blank" class="btn btn-warning btn-block"> Learn to code HTML5</a>
+                </div>
+                <!--End panel -->
+            </div>
+            <!--End feature -->
+
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Style With CSS3</h3>
+                    </div>
+                    <!-- End panel-heading-->
+                    <img src="images/badge_css3.jpg" alt="img" class="img-circle">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos inventore, voluptas quidem. Adipisci nemo commodi nobis, amet labore impedit illo iusto incidunt maxime officiis quibusdam deserunt reprehenderit saepe, laboriosam accusamus.</p>
+                    <a href="#" target="_blank" class="btn btn-danger btn-block"> Style with the CSS3</a>
+                </div>
+                <!--End panel -->
+            </div>
+            <!--End feature -->
+
+            <div class="col-sm-4 feature">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Framework by Bootstrap 3</h3>
+                    </div>
+                    <!-- End panel-heading-->
+                    <img src="images/badge_bootstrap.jpg" alt="img" class="img-circle">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos inventore, voluptas quidem. Adipisci nemo commodi nobis, amet labore impedit illo iusto incidunt maxime officiis quibusdam deserunt reprehenderit saepe, laboriosam accusamus.</p>
+                    <a href="#" target="_blank" class="btn btn-info btn-block"> More Bootstrap</a>
+                </div>
+                <!--End panel -->
+            </div>
+            <!--End feature -->
+
+
+
+        </div>
+        <!-- End features -->
+
+        <div class="row" id="moreinfo">
+            <div class="col-sm-6">
+                <h3>Neat Tabbable Content</h3>
+                <div class="tabbable">
+                    <ul class="nav nav-tabs">
+                        <li class="active"> <a href="#tab1" data-toggle="tab">Section 1</a></li>
+                        <li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab1">
+                            <h4><span class="glyphicon glyphicon-map-marker"></span>Our Location <small>More like our favourite surf sopt</small></h4>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.82239206054!2d90.27923760113653!3d23.780887456421343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2z4Kai4Ka-4KaV4Ka-!5e0!3m2!1sbn!2sbd!4v1502555576847" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                            <p>lipsumLorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis illum, recusandae quasi obcaecati magni distinctio similique in eius, adipisci repudiandae animi odit laboriosam voluptate eveniet, libero quae mollitia qui. Voluptatem.</p>
+                            <p>lipsumLorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis illum, recusandae quasi obcaecati magni distinctio similique in eius, adipisci repudiandae animi odit laboriosam voluptate eveniet, libero quae mollitia qui. Voluptatem.</p>
+                            <p>lipsumLorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis illum, recusandae quasi obcaecati magni distinctio similique in eius, adipisci repudiandae animi odit laboriosam voluptate eveniet, libero quae mollitia qui. Voluptatem.</p>
+                        </div>
+                        <!-- End  tab-pane -->
+                        <div class="tab-pane" id="tab2">
+                            <h4>A Left Floated Picture <small>Using placehold.it</small></h4>
+                            <img src="http://www.placehold.it/140" class="thumbnail pull-left">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate possimus modi minus enim fuga officia excepturi quidem dicta, ipsum, adipisci ut eos doloribus consectetur labore. Inventore adipisci, a vero ut.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate possimus modi minus enim fuga officia excepturi quidem dicta, ipsum, adipisci ut eos doloribus consectetur labore. Inventore adipisci, a vero ut.</p>
+                            <hr/>
+                            <a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click for a Modal window </a>
+                            <div class="modal fade" id="myModal">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">A Modal Window</h4>
+
+                                            <div class="modal-body">
+                                                <h4>Text ina modal</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo aliquid voluptatem voluptate cupiditate dolores et quibusdam adipisci molestias quos harum a enim ad minima pariatur ratione quaerat, praesentium dolorum atque.</p>
+                                                <h4>Popovers in a modal</h4>
+                                                <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You Clicked it!" data-content="I know you Would">Don't Click this button</a>
+                                                <h4>Tooltips in a modal</h4>
+                                                <a href="#" data-original-title="Tooltip" rel="tooltip">This link</a>Should have a tooltip, and so should <a href="#" data-original-title="Wow!!!" rel="tooltip">this one</a>!
+                                                <hr />
+                                                <p><small class="text-muted"> PS. This form doesn't do anything. just a heads up.</small></p>
+
+                                                <form class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                                        </div>
+                                                    </div>
+                                                    <!-- End form-group -->
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                                                        <div class="col-lg-10">
+                                                            <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <!-- End form-group -->
+                                                    <div class="form-group">
+                                                        <label class="col-lg-2 control-label" for="inputMassage">Massage</label>
+                                                        <div class="col-lg-10">
+                                                            <textarea name="Massage" id="inputMassage" cols="30" rows="10" class="form-control" placeholder="Massage"></textarea>
+                                                            <button class="btn btn-success pull-right" type="submit">Send!</button>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End form-group -->
+                                                </form>
+                                                <!-- End Horizontal form-->
+
+                                            </div>
+                                            <!-- modal-body -->
+                                            <div class="modal-footer">
+                                                <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                                                <button class="btn btn-primary" data-dismiss="modal" type="button">Save Changes</button>
+                                            </div>
+                                            <!-- End Modal-footer-->
+                                        </div>
+                                        <!-- End modal-header -->
+                                    </div>
+                                    <!-- End modal-content -->
+                                </div>
+                                <!-- End modal-dialog-->
+                            </div>
+                            <!-- End myModal-->
+                        </div>
+                        <!-- End Tab 2-->
+                    </div>
+                    <!-- End tab-content -->
+                </div>
+                <!-- End  tabbable -->
+            </div>
+            <!-- End col-sm-6 -->
+            <div class="col-sm-6">
+                <h3>Some Text Info</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore at in ipsum sapiente quam tenetur quas? Impedit asperiores harum distinctio, facere animi nihil eius quia quis laborum aut quisquam ipsa?</p>
+                <h4>A List Group</h4>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Kale</h4>
+                        <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse neque unde expedita, magni doloribus eos dolore. Iste cupiditate aspernatur nulla illum porro, accusantium perspiciatis consectetur natus numquam repellat incidunt?</p>
+                    </a>
+                    <!-- End list group item-->
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Carrots</h4>
+                        <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse neque unde expedita, magni doloribus eos dolore. Iste cupiditate aspernatur nulla illum porro, accusantium perspiciatis consectetur natus numquam repellat incidunt?</p>
+                    </a>
+                    <!-- End list group item-->
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">Steel-cut oats</h4>
+                        <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse neque unde expedita, magni doloribus eos dolore. Iste cupiditate aspernatur nulla illum porro, accusantium perspiciatis consectetur natus numquam repellat incidunt?</p>
+                    </a>
+                    <!-- End list group item-->
+                </div>
+                <!-- End List Group -->
+                <h5>A Small Heading</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae optio commodi doloribus temporibus molestiae, aspernatur nulla consequatur itaque. Deleniti, voluptatem, voluptatibus. Consectetur, beatae, id. Aspernatur soluta voluptatem error quod aliquam.</p>
+            </div>
+            <!-- End col-sm-6 -->
+        </div>
+        <!-- End moreinfo -->
+        <hr />
+        <div class="row" id="moreCourses">
+            <div class="col-12">
+                <h3>Lear more about Web Design</h3>
+                <div class="thumbnails row">
+                    <div class="col-6">
+                        <div class="thumbnail">
+                            <img src="images/item_webhosting101.jpg" alt="img">
+                            <div class="label label-info price"><span class="glyphicon glyphicon-tag"></span>
+                                <sup>$</sup>39
+                            </div>
+                            <div class="caption">
+                                <h3>Web Hosting 101</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, unde expedita. Error, iure. Quasi obcaecati cupiditate autem blanditiis, quis suscipit eveniet odio nulla soluta amet provident laboriosam, porro excepturi repudiandae.</p>
+                                <p><a href="#" class="btn btn-primary btn-small" target="_blank">Take Course</a><a href="#" target="_blank" class="btn btn-small btn-link">Learn MOre</a></p>
+                            </div>
+                        </div>
+                        <!-- End thumbnail-->
+                    </div>
+                    <!-- End col-6-->
+                    <div class="col-6">
+                        <div class="thumbnail">
+                            <img src="images/item_psd2html5.jpg" alt="PSD to Html5 & CSS3">
+                            <div class="label label-success price"><span class="glyphicon glyphicon-tag"></span>
+                                <sup>$</sup>Free
+                            </div>
+                            <div class="caption">
+                                <h3>PSD to HTML5 &#33; CSS3</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, unde expedita. Error, iure. Quasi obcaecati cupiditate autem blanditiis, quis suscipit eveniet odio nulla soluta amet provident laboriosam, porro excepturi repudiandae.</p>
+                                <p><a href="#" class="btn btn-primary btn-small" target="_blank">Take Course</a><a href="#" target="_blank" class="btn btn-small btn-link">Learn MOre</a></p>
+                            </div>
+                        </div>
+                        <!-- End thumbnail-->
+                    </div>
+                    <!-- End col-6-->
+                </div>
+                <!-- End row-->
+            </div>
+            <!-- End Col-12 -->
+        </div>
+        <!-- End moreCourses -->
+
+    </div>
+    <!-- End Container -->
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    <h6>Copyright &copy; 2017 {AR}</h6>
+                </div>
+                <!-- End col-sm-2 -->
+                <div class="col-sm-4">
+                    <h6>About Us</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas cupiditate illo reprehenderit eos. Minima omnis numquam illum, quos, eligendi obcaecati aut est et. Quidem consectetur odio, perspiciatis quia sint pariatur?</p>
+                </div>
+                <!-- End col-sm-4 -->
+                <div class="col-sm-2">
+                    <h6>Navigation</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Links</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- End col-sm-2 -->
+                <div class="col-sm-2">
+                    <h6>Follow Us</h6>
+                    <ul class="unstyled">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Google plus</a></li>
+                    </ul>
+                </div>
+                <!-- End col-sm-2 -->
+                <div class="col-sm-2">
+                    <h6>Coded With <span class="glyphicon glyphicon-heart">By Nahid</span></h6>
+
+                </div>
+                <!-- End col-sm-2 -->
+            </div>
+            <!-- End row -->
+        </div>
+        <!-- End Container -->
+    </footer>
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    <!-- First try for the online version of jQuery-->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- If no online access, fallback to our hardcoded version of jQuery -->
+    <script>
+        window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="includes/js/script.js"></script>
+
+</body>
+
+</html>
